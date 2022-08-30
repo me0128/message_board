@@ -36,6 +36,7 @@ public class EditServlet extends HttpServlet {
 
         //該当のIDのメッセージ1件のみをデータベースから取得
         Message m = em.find(Message.class, Integer.parseInt(request.getParameter("id")));
+        
 
         em.close();
 
